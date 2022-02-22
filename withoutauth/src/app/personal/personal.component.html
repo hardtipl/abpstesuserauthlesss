@@ -1,0 +1,186 @@
+<p>personal works!</p>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3">
+            <div class="login-brand">
+                <h3>अखिल भारतीय प्रतिनिधि सभा</h3>
+            </div>
+            <div class="card">
+                <!-- /.card-header -->
+                <div class="card-body">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-3 col-form-label">Name:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" formControlName="arrivaltravel" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-3 col-form-label">Dayitav:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" formControlName="arrivaltravel"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-3 col-form-label">Prant:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control"formControlName="arrivaltravel" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="login-brand">
+                <h3>यातायात जानकारी</h3>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h2 class="section-title">
+                                        Arrival
+                                    </h2>
+                                </div>
+                                <form [formGroupName]="formdata">
+                                    <div class="card-body">
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="exampleInputEmail1">Date of
+                                                Arrival</label>
+                                            <input type="text" class="col-sm-9 form-control" formControlName="datearrival">
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="exampleInputPassword1">Arrival
+                                                Via</label>
+                                            <select class="form-control col-sm-9" id="exampleInput" formControlName="arrivalvia">
+                                                <option value="Flight"> Flight </option>
+                                                <option value="Train"> Train </option>
+                                                <option value="Bus"> Bus </option>
+                                                <option value="pv"> Personal Vechile </option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="exampleInputFile">Pick Up
+                                                Stand</label>
+                                            <input type="text" class="col-sm-9 form-control" formControlName="arrivalpickup">
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="exampleInputFile">PNR
+                                                Number</label>
+                                            <input type="text" class="col-sm-9 form-control" formControlName="arrivalpnr">
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="exampleInputFile">Travel
+                                                Remarks</label>
+                                            <textarea class="form-control col-sm-9" formControlName="arrivaltravel"></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h2 class="section-title">Departure</h2>
+                                </div>
+                                <form >
+                                    <div class="card-body">
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="exampleInputEmail1">Date of
+                                                Departure</label>
+                                            <input type="text" class="col-sm-9 form-control" formControlName="departuredate">
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="exampleInputPassword1">Departure
+                                                Via</label>
+                                            <select class="form-control col-sm-9" formControlName="departurevia">
+                                                <option value="Flight"> Flight </option>
+                                                <option value="Train"> Train </option>
+                                                <option value="Bus"> Bus </option>
+                                                <option value="pv"> Personal Vechile </option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="exampleInputFile">Drop Up
+                                                Stand</label>
+                                            <input type="text" class="col-sm-9 form-control" formControlName="departuredrop">
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="exampleInputFile">PNR
+                                                Number</label>
+                                            <input type="text" class="col-sm-9 form-control" formControlName="departurepnr">
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="exampleInputFile">Travel
+                                                Remarks</label>
+                                            <textarea class="form-control col-sm-9" formControlName="departuretravel"></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3">
+            <div class="login-brand">
+                <h3>भोजन परेजी</h3>
+            </div>
+            <div class="card">
+                <!-- [formarray]="bhojanpareji" -->
+                <div class="card-body">
+                    <div class="row" >
+                        <div class="col-md-4">
+                            <div class="form-group row">
+                                <input type="checkbox" class="mr-3" />
+                                <label for="inputEmail3" class="col-form-label">Without Sugar</label>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group row">
+                                <input type="checkbox" class="mr-3" />
+                                <label for="inputEmail3" class="col-form-label">Without Salt</label>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group row">
+                                <input type="checkbox" class="mr-3" />
+                                <label for="inputEmail3" class="col-form-label">Without Spicy</label>
+
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-3 col-form-label">भोजन परेजी:</label>
+                                <div class="col-sm-12">
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12  text-center">
+                            <button class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
